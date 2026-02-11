@@ -1,132 +1,19 @@
-<style>
-/*avoid repetitive, this apply to all*/
-/*although margin-bottom like at video-stats has 20px, but up here we
-apply to all is 0px, css will prioritize more specific de selector
-means p is general targeting all while video-stats specifically only target video-stats class */
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Practice</title>
+    <link rel="stylesheet" href="styles/text.css">
 
-  .video-title {
-    font-size: 30px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    /*width here set text to how long the text in one line so rest of the text goes to second line*/
-    width: 400px;
-    line-height: 50px;
-    margin-bottom: 5px;
-  }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
-  .video-stats {
-    font-size: 14px;
-    color: rgb(96, 96, 96);
-    margin-bottom: 20px;
-  }
 
-  .video-author {
-    color: rgb(96, 96, 96);
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
+  </head>
 
-  .video-description {
-    font-size: 14px;
-    color: rgb(96, 96, 96);
-    width: 380px;
-    line-height: 22px;
-  }
 
-  .span-example {
-    color: red;
-    margin-left: 10px;
-  }
-
-  .span-example:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-
-  .apple-new {
-    text-align: center;
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-  }
-
-  .apple-brand {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    margin-top: 5px;
-    font-weight: bold;
-  }
-
-  .apple-description {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    margin-top: 3px;
-    font-weight: bold;
-  }
-
-  .apple-price {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(61, 61, 61);
-    margin-top: 10px;
-  }
-
-  .apple-buy-button {
-    margin-top: 20px;
-    border-radius: 30px;
-    border: none;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 12px;
-    padding-right: 12px;
-    background-color: rgb(47, 110, 255);
-    color: white;
-    font-weight: bold;
-    display: block;
-    margin: auto;
-  }
-
-  .usd-price {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px; 
-  }
-  .usd {
-    color: darkgrey;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .first {
-    margin-top: 40px;
-  }
-  .price-increase {
-    color: green;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .second {
-    margin-top: 10px;
-  }
-  .after-hours {
-    color: darkgrey;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .price-decrease {
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .third {
-    margin-top: 10px;
-  }
-
-</style>
-
-<p class="video-title">
+  <body>
+    <p class="video-title">
   Talking Tech and AI with Google CEO Sundar Pichai!
 </p>
 <p class="video-stats">
@@ -169,3 +56,5 @@ means p is general targeting all while video-stats specifically only target vide
 <p class="third">
   <span class="after-hours">After hours 1,048.00</span> <span class="price-decrease">-1.61 (0.15%)</span>
 </p>
+  </body>
+</html>
