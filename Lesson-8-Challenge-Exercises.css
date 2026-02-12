@@ -1,0 +1,42 @@
+.first-name, .last-name, .email {
+  border-radius: 5px;
+  border-color: rgb(206, 203, 203);
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 5px;
+}
+.first-name, .last-name {
+  width: 120px;
+  height: 30px;
+}
+
+.email {
+  width: 250px;
+  height: 30px;
+  display: block;
+  margin-top: 10px;
+}
+
+.sign-up-button {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(62, 109, 230);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-up-button:hover {
+  background-color: rgb(53, 90, 184);
+}
+
+.sign-up-button:active {
+  background-color: rgb(31, 67, 138);
+}
