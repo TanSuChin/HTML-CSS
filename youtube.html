@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>Youtube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <style>
       /*object-fit and object-position is used when our image and certain height and width
       that cannot fit perfectly into border without stretched*/
@@ -11,20 +15,22 @@
       inline element = appear within line of text, cth <strong> to make text bold*/
       
       /*can change block element into inline-block*/
+      p {
+        font-family: Roboto;
+      }
+
       .thumbnail {
         object-fit: cover;
         object-position: right;
         display: block;
+        width: 300px;
+        margin-bottom: 20px;
       }
 
       .search-bar {
         font-size: 15px;
         margin-left: 12px;
         display: block;
-      }
-
-      .video-title {
-        width: 300px;
       }
 
       .video-preview {
@@ -34,6 +40,39 @@
         margin-right: 15px;
       }
 
+       .channel-pic {
+        display: inline-block;
+      }
+
+      .video-info {
+        display: inline-block;
+        width: 230px;
+        vertical-align: top;
+        margin-left: 10px;
+      }
+
+      .channel-pic-1, .channel-pic-2 {
+        border-radius: 50px;
+        width: 50px;
+      }
+
+      .video-title, .video-author, .video-stats {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .video-title {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      .video-author, .video-stats {
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: rgb(62, 61, 61);
+      }
+
     </style>
   </head>
   <body>
@@ -41,27 +80,38 @@
 
     <div class="video-preview">
       <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-      <p class="video-title">
-        Talking Tech and AI with Google CEO Sundar Pichai!
-      </p>
-      <p class="video-author">
-        Marques Brownlee
-      </p>
-      <p class="video-stats">
-        3.4M views &#183; 6 months ago
-      </p>
+      <div class="channel-pic">
+        <img class="channel-pic-1" src="channel-pic/channel-1.jpeg">
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+          Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p class="video-author">
+          Marques Brownlee
+        </p>
+        <p class="video-stats">
+          3.4M views &#183; 6 months ago
+        </p>
+      </div>
+      
     </div>
     <div class="video-preview">
       <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-      <p class="video-title">
-        Try Not To Laugh Challenge #9
-      </p>
-      <p class="video-author">
-        Markiplier
-      </p>
-      <p class="video-stats">
-        19M views &#183; 4 years ago
-      </p>
+      <div class="channel-pic">
+        <img class="channel-pic-2" src="channel-pic/channel-2.jpeg">
+      </div>
+      <div class="video-info">
+        <p class="video-title">
+          Try Not To Laugh Challenge #9
+        </p>
+        <p class="video-author">
+          Markiplier
+        </p>
+        <p class="video-stats">
+          19M views &#183; 4 years ago
+        </p>
+      </div>
     </div>
   </body>
 </html>
