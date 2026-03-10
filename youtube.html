@@ -6,76 +6,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <style>
-      /*object-fit and object-position is used when our image and certain height and width
-      that cannot fit perfectly into border without stretched*/
-      
-      /*block element = takes up whole line, other thing cannot put beside dy, cth <p>
-      inline-block element = only takes as much space as needed, not the whole line like block element, cth image n search bar
-      inline element = appear within line of text, cth <strong> to make text bold*/
-      
-      /*can change block element into inline-block*/
-      p {
-        font-family: Roboto;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
 
-      .thumbnail {
-        width: 100%;
-      }
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
 
-      .search-bar {
-        display: block;
-      }
-
-      .video-info-grid {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-      }
-
-      .video-info {
-        vertical-align: top;
-        margin-left: 10px;
-      }
-
-      .profile-pic {
-        border-radius: 50px;
-        width: 50px;
-      }
-
-      .video-title {
-        margin-top: 0;
-        margin-bottom: 12px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-      }
-
-      .video-author, .video-stats {
-        font-size: 12px;
-        color: rgb(62, 61, 61);
-      }
-
-      .video-author {
-        margin-bottom: 5px;
-      }
-
-      .video-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 40px;
-      }
-
-      .thumbnail-row {
-        margin-bottom: 12px;
-      }
-
-    </style>
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search">
+    <div class="header">
+      <div class="left-section">
+        left section
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+      </div>
+      <div class="right-section">
+        right section
+      </div>
+    </div>
 
     <div class="video-grid">
       <div class="video-preview">
