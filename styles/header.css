@@ -4,6 +4,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: lightgrey;
 }
 
 .left-section {
@@ -52,7 +60,7 @@
   border-color: rgb(180, 180, 180);
   border-radius: 2px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05); 
-  width: 0; /*flexbox hv skrinking limit, set width to 0 can make the flexbox default min shrink to 0
+  width: 0; /*flexbox hv skrinking limit, set width to 0 can make the flexbox  default min shrink to 0
   which means can shrink max as much space available*/
 }
 
