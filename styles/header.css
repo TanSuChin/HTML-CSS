@@ -7,19 +7,100 @@
 }
 
 .left-section {
-  background-color: lightblue;
-  width: 150px;
+  display: flex; /*turn the left section from div into a flexbox baru can apply align-items
+  because align-items is only apply to flexbox not normal div*/
+  align-items: center; /*make it center vertically*/
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 20px;
+}
+
+.youtube-logo {
+  height: 20px;
 }
 
 .middle-section {
-  background-color: lightpink;
   flex: 1; /*takes up as much space available*/
   margin-left: 70px;
   margin-right: 35px;
   max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.search-button {
+  height: 40px;
+  width: 66px;
+  background-color: rgb(233, 233, 233);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(180, 180, 180);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(180, 180, 180);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05); 
+  width: 0; /*flexbox hv skrinking limit, set width to 0 can make the flexbox default min shrink to 0
+  which means can shrink max as much space available*/
+}
+
+.search-bar::placeholder {
+  font-family: roboto, arial;
+  font-size: 16px;
+}
+
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(236, 236, 236);
 }
 
 .right-section {
-  background-color: lightblue;
-  width: 200pxs;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0; /*so that when resize the page, the flex box dont shrink*/
+}
+
+.search-icon {
+  height: 25px;
+  margin-top: 4px;
+}
+
+.voice-search-icon {
+  height: 24px;
+  margin-top: 4px;
+}
+
+.upload-icon {
+  height: 24px;
+}
+
+.youtube-apps-icon {
+  height: 24px;
+}
+
+.notifications-icon {
+  height: 24px;
+}
+
+.current-user-picture {
+  height: 32px;
+  border-radius: 16px;
 }
