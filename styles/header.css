@@ -43,12 +43,52 @@
 .search-button {
   height: 40px;
   width: 66px;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(240, 240, 240);
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(180, 180, 180);
+  border-color: rgb(192, 192, 192);
   margin-left: -1px;
   margin-right: 10px;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container {
+  /*to make tooltip align*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  /*to avoid when mouse hover over tooltip it shows the tooltip
+  we only want to show the tooltip when hover over the button*/
+  pointer-events: none;
+  /*to avoid the tooltip words cover our icon, wrap around our icon*/
+  white-space: nowrap;
+}
+
+/*when hover over the button, what the tooltip do*/
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip {
+  opacity: 1;
 }
 
 .search-bar {
@@ -60,6 +100,11 @@
   border-style: solid;
   border-color: rgb(180, 180, 180);
   border-radius: 2px;
+
+  /*border works same as margin and padding, can combine values
+  first value is border width second value is border style third is color*/
+  border: 1px solid rgb(180, 180, 180);
+  
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05); 
   width: 0; /*flexbox hv skrinking limit, set width to 0 can make the flexbox  default min shrink to 0
   which means can shrink max as much space available*/
@@ -78,6 +123,7 @@
   background-color: rgb(236, 236, 236);
 }
 
+
 .right-section {
   width: 180px;
   display: flex;
@@ -89,12 +135,12 @@
 
 .search-icon {
   height: 25px;
-  margin-top: 4px;
+ 
 }
 
 .voice-search-icon {
   height: 24px;
-  margin-top: 4px;
+ 
 }
 
 .upload-icon {

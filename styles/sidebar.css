@@ -5,4 +5,34 @@
   top: 55px;
   background-color: white;
   width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-link {
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*so that in flexbox, display is in vertical, so the word Home can be display below the home icon instead of beside the home icon in sidebar*/
+  /*justify-content and align-items 倒转 w flex-direction*/
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+/*space img means target all image in sidebar-link*/
+.sidebar-link img {
+  height: 24px;
+  /*to allign vertically is hard in css, use flexbox to do so*/
+  margin-bottom: 4px;
+}
+
+.sidebar-link div {
+  font-family: roboto, arial;
+  font-size: 10px;
+
 }

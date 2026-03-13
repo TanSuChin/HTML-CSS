@@ -23,7 +23,7 @@ inline element = appear within line of text, cth <strong> to make text bold*/
 
 .profile-pic {
   border-radius: 50px;
-  width: 50px;
+  width: 36px;
 }
 
 .video-title {
@@ -50,8 +50,29 @@ inline element = appear within line of text, cth <strong> to make text bold*/
   row-gap: 40px;
 }
 
+/*wwhen adjust window size, we want the number if video shown in a row also responsive to how big or small the window is
+this is responsive design, to do this use media query*/
+/*all the css inside below will be applied when the window screen size is 600px or less*/
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*this is how to combine above and below into one*/
+@media (min-width: 751px) and (max-width: 999px) {
+
+}
+
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .thumbnail-row {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -64,9 +85,6 @@ inline element = appear within line of text, cth <strong> to make text bold*/
   font-family: roboto, arial;
   font-size: 12px;
   font-weight: 500;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 4px 10px;
   border-radius: 2px;
 }
